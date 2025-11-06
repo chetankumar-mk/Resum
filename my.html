@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chetan | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    header {
+      background: #1e293b;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: linear-gradient(135deg, #38bdf8, #1e40af);
+      color: #fff;
+      border-radius: 0 0 50px 50px;
+      position: relative;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1e293b;
+      border-left: 5px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background: #e2e8f0;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #38bdf8;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #1e40af;
+    }
+
+    /* Education */
+    .education {
+      display: grid;
+      gap: 20px;
+    }
+
+    .edu-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .edu-card h3 {
+      color: #1e40af;
+      margin-bottom: 8px;
+    }
+
+    .edu-card p {
+      margin: 5px 0;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Chetan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="img.png.png" alt="Chetan Photo">
+    <h1>Hello, I’m Chetan 👋</h1>
+    <p>5th Sem CSE Student | Web Developer | Problem Solver</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am currently pursuing B.E. in Computer Science and Engineering (5th Semester).  
+      I am interested in building web applications, exploring AI, and participating in coding competitions.  
+      My goal is to become a skilled software engineer and contribute to impactful projects.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="edu-card">
+        <h3>Bachelor of Engineering (Computer Science)</h3>
+        <p><strong>College:</strong> SKSVMACET, Laxmeshwar</p>
+        <p><strong>Status:</strong> Currently Studying (5th Semester)</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>2nd PUC (Science)</h3>
+        <p><strong>College:</strong> Kotambri PU Science College</p>
+        <p><strong>Year of Passing:</strong> 2023</p>
+        <p><strong>Percentage:</strong> 85%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">C</span>
+      <span class="skill">Python</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">MySQL</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Bus Tracking Mini Project</h3>
+        <p>A real-time bus tracker using HTML, CSS, JS & Firebase, designed for rural areas.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio built using HTML, CSS, and hosted online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>📧 Email: chetankori40@gmail.com</p>
+      <p>🔗 LinkedIn: linkedin.com/in/chetan</p>
+      <p>💻 GitHub: github.com/chetan</p>
+      <p>📱 Phone: +91-7624894882</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Chetan | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
