@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .resume-container {
+    background-color: #fff;
+    width: 850px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 20px 40px;
+  }
+  
+  .header-text h1 {
+    font-size: 26px;
+    color: #000;
+    letter-spacing: 1px;
+  }
+  
+  .header-text h2 {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .profile-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+  
+  .main-content {
+    display: flex;
+    padding: 20px 40px;
+  }
+  
+  .left-column {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 2px solid #f0f0f0;
+  }
+  
+  .right-column {
+    width: 65%;
+    padding-left: 20px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  p, li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0077b5;
+  }
+  
+  .contact, .skills, .languages, .programming {
+    margin-bottom: 25px;
+  }
+  
+  .education ul, .projects ul {
+    list-style-type: circle;
+  }
+  
